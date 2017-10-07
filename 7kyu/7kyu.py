@@ -1,4 +1,4 @@
-# shortest word
+# PROBLEM 1: Shortest Word
 # Given a string of words, return the length of the shortest word(s).
 def find_short(sentence):
     # your code here
@@ -15,7 +15,7 @@ def find_short(s):
     return min(len(x) for x in s.split())
 
 
-# Exes and Ohs
+# PROBLEM 2: Exes and Ohs
 # Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contains any char.
 def xo(s):
     s = s.lower()
@@ -35,7 +35,8 @@ def xo(s):
     s = s.lower()
     return s.count('x') == s.count('o')
 
-# Vowel count
+
+# PROBLEM 3: Vowel count
 # Return the number (count) of vowels in the given string
 def getCount(string):
     vowels = { 'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0 }
