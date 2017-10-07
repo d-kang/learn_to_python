@@ -30,11 +30,7 @@ def xo(s):
     return numX == numO
 
 
-
 # optimized solution
 def xo(s):
     s = s.lower()
     return s.count('x') == s.count('o')
-
-s = 'xkoGJxCoxooxxoooSoLoxxbmAQoxxNdoxfxxrxEhpoooxooxoxx'
-print('xo(s)', xo(s))
