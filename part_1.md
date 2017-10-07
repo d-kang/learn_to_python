@@ -14,6 +14,7 @@ x + y == 3
 #### How to make function:
 ```python
 def myFunc:
+    print('hello world!')
 ```
 
 #### How to if else:
