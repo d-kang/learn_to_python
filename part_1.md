@@ -11,7 +11,7 @@ x + y == 3
 # True
 ```
 
-#### How to make function:
+#### How to make a function:
 ```python
 def myFunc:
     print('hello world!')
@@ -19,7 +19,7 @@ def myFunc:
 
 #### How to if else:
 ```python
-if expression:
+if a == b:
     return true
 else:
     return false
@@ -28,6 +28,7 @@ else:
 #### How to else if:
 ```python
 elif a > b:
+    print('else if condition passed')
 ```
 
 #### How to for loop:
@@ -36,7 +37,7 @@ elif a > b:
 # works like forEach method
 # iterates over elems not over index
 for x in list:
-
+    print(x)
 # when iterating over dictionary, it iterates over keys
 ```
 #### How to for loop over range of numbers:
@@ -78,7 +79,7 @@ arrToStr = list(string)
 # ['t', 'h', 'e', ' ', 'b', 'r', 'o', 'w', 'n', ' ', 'c', 'o', 'w']
 ```
 
-#### How to instantiate empty var:
+#### How to instantiate an empty var:
 ```python
 value = None
 ```
@@ -112,7 +113,7 @@ min(x for x in [0, 10 , 15]) # outputs 0
 
 ```
 
-#### How to template string:
+#### How to make a template string:
 ```python
 # called f strings
 x = 'string'
@@ -154,7 +155,7 @@ if vowels[char]: # will thow KeyError if no key
 if char in vowels:
 ```
 
-#### How to add up nums in array
+#### How to add up nums in an array
 ```python
 sum([1, 2, 3, 4])
 # 10
