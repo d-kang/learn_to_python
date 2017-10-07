@@ -72,7 +72,7 @@ arrToStr = string.split(' ')
 # string.split('') will throw an error
 ```
 
-#### How to split string into array of characters?
+#### How to split string into array of characters:
 ```python
 string = 'the brown cow'
 arrToStr = list(string)
@@ -95,21 +95,23 @@ num += 1
 string.lower()
 ```
 
-#### To count the number of times a character appears in a string:
+#### How to count the number of times a character appears in a string:
 ```python
-string.count('x') #outputs count of 'x'
+string = 'hello'
+string.count('l')
+# 2
 ```
 
-#### Find max / min length string in array:
+#### How to find min/max length of string in an array:
 ```python
-max(len(x) for x in ['the', 'brown', 'cow']) # outputs 5
 min(len(x) for x in ['the', 'brown', 'cow']) # outputs 3
+max(len(x) for x in ['the', 'brown', 'cow']) # outputs 5
 
 ```
-#### Find max / min number in array:
+#### How to find min/max number in an array:
 ```python
-max(x for x in [0, 10 , 15]) # outputs 15
 min(x for x in [0, 10 , 15]) # outputs 0
+max(x for x in [0, 10 , 15]) # outputs 15
 
 ```
 
@@ -129,7 +131,7 @@ y = False
 x == y
 # outputs False
 ```
-#### How to Object Literal (in python is Dictionary):
+#### How to Object Literal (in python it's called a Dictionary):
 ```python
 # instantiate empty dict
 vowels = {}
@@ -144,18 +146,21 @@ vowles['a'] == 0 # True
 numbers[1] == 'a' # True
 ```
 
-#### Property Lookup for Non-existant Key throws error
+#### How to do a property Lookup for Non-existant Keys:
 ```python
+# Property lookup will throw an error if key doesnt exist
 vowels = { 'a': 0, 'e': 0, 'i':0, 'o': 0, 'u': 0 }
-vowels['b'] # throws KeyError: 'b'
+vowels['b']
+# KeyError
 
-# dont use
-if vowels[char]: # will thow KeyError if no key
-# use
+# DON'T use
+if vowels[char]:
+
+# DO use
 if char in vowels:
 ```
 
-#### How to add up nums in an array
+#### How to add up nums in an array:
 ```python
 sum([1, 2, 3, 4])
 # 10
