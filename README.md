@@ -16,51 +16,62 @@ pip3 install module_name
 Big Ideas with Little Code <br>
 Significant whitespace; indent 4 spaces
 
-#### How to make function?
+#### How to console log:
+```python
+print('Hello World!')
+```
+
+#### How to assign a variable:
+```python
+x = 1
+y = 2
+x + y == 3
+# True
+```
+
+#### How to make function:
 ```python
 def myFunc:
 ```
-#### How to make if else?
+#### How to make if else:
 ```python
 if expression:
-    return - 1
-elif expression:
-    return false
-else:
     return true
+else:
+    return false
 ```
 
-#### How to for loop?
+#### How to else if:
+```python
+elif a > b:
+```
+
+#### How to for loop:
 ```python
 # works like forEach method
 # iterates over elems not the index
 for x in list:
 ```
 
-#### How do you turn string into an array?
+#### How to turn string into array:
 ```python
 string.split()
 ```
 
-#### Is it possible to declare a variable in Python?
+#### How to instantiate null var:
 ```python
 value = None
 ```
 
-#### How do you increment a number?
+#### How to increment a number:
 ```python
 num += 1
 # num++ is invalid
 ```
 
-#### How do you lower case a string?
+#### How to lower case a string:
 ```python
 string.lower()
-```
-
-#### How do you do an else if?
-```python
-elif a > b:
 ```
 
 #### To count the number of times a character appears in a string:
@@ -68,20 +79,32 @@ elif a > b:
 string.count('x') #outputs count of 'x'
 ```
 
-#### Find max / min length string in array?
+#### Find max / min length string in array:
 ```python
 max(len(x) for x in ['the', 'brown', 'cow']) # outputs 5
 min(len(x) for x in ['the', 'brown', 'cow']) # outputs 3
 
 ```
-#### Find max / min number in array?
+#### Find max / min number in array:
 ```python
 max(x for x in [0, 10 , 15]) # outputs 15
 min(x for x in [0, 10 , 15]) # outputs 0
 
 ```
 
-####
+#### How to template string:
 ```python
+# called f strings
+x = 'string'
+myFString = f'Hi I am an f {x}'
+print('myFString', myFstring)
+# prints 'Hi I am an f string'
+```
 
+#### How to boolean:
+```python
+x = True
+y = False
+x == y
+# outputs False
 ```
