@@ -34,3 +34,29 @@ def xo(s):
 def xo(s):
     s = s.lower()
     return s.count('x') == s.count('o')
+
+# Vowel count
+# Return the number (count) of vowels in the given string
+def getCount(string):
+    vowels = { 'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0 }
+    tally = 0
+    for char in string:
+        if char in vowels:
+            vowels[char] += 1
+
+    for count in vowels:
+        tally += vowels[count]
+
+    return tally
+
+# optimized solution v1
+def getCount(inputStr):
+    x = 0
+    for letter in inputStr:
+        if letter in 'aeiouAEIOU':
+            x += 1
+    return x
+
+# optimized solution v2
+def getCount(inputStr):
+    return sum(1 for letter in inputStr if let in "aeiouAEIOU")

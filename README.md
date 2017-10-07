@@ -1,5 +1,7 @@
 # python_code_wars
-### The following are notes taken for code wars problem sets in python
+### How to Python3
+
+The following are notes taken for code wars problem sets in python
 
 #### How do I get started with Python3?
 ``` python
@@ -13,10 +15,14 @@ pip3 install module_name
 ```
 
 #### Zen of Python
-Big Ideas with Little Code <br>
-Significant whitespace; indent 4 spaces
-
-#### How to console log:
+```
+Big Ideas with Little Code
+Significant whitespace
+  Indent 4 spaces... eww!
+  No curly braces... Yes!
+  ... acceptable tradeoff
+```
+#### How to print to console:
 ```python
 print('Hello World!')
 ```
@@ -33,7 +39,8 @@ x + y == 3
 ```python
 def myFunc:
 ```
-#### How to make if else:
+
+#### How to if else:
 ```python
 if expression:
     return true
@@ -55,7 +62,21 @@ for x in list:
 
 #### How to turn string into array:
 ```python
-string.split()
+string = 'the brown cow'
+arrToStr = string.split()
+# ['the', 'brown', 'cow']
+arrToStr = string.split(' ')
+# same as above
+arrToStr = string.split(' ')
+# ['the br', 'wn c', 'w']
+```
+
+#### How to split string into array of characters?
+```python
+string = 'the brown cow'
+arrToStr = list(string)
+# ['t', 'h', 'e', ' ', 'b', 'r', 'o', 'w', 'n', ' ', 'c', 'o', 'w']
+# string.split('') will throw an error
 ```
 
 #### How to instantiate null var:
@@ -107,4 +128,29 @@ x = True
 y = False
 x == y
 # outputs False
+```
+#### How to Object Literal (in python is Dictionary):
+```python
+# instantiate empty dict
+vowels = {}
+
+# string keys must have quotes else throws error
+vowels = { 'a': 0, 'e': 0, 'i':0, 'o': 0, 'u': 0 }
+numbers = { 1: a } # this works fine
+
+# must use bracket notation for property lookup
+# dot notation will throw an error
+vowles['a'] == 0 # True
+numbers[1] == 'a' # True
+```
+
+#### Property Lookup for Non-existant Key throws error
+```python
+vowels = { 'a': 0, 'e': 0, 'i':0, 'o': 0, 'u': 0 }
+vowels['b'] # throws KeyError: 'b'
+
+# dont use
+if vowels[char]: # will thow KeyError if no key
+# use
+if char in vowels:
 ```
