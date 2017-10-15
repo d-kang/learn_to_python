@@ -6,8 +6,8 @@ class Node:
 
 
 L = Node('a', Node('b', Node('c', Node('d'))))
-print('L', L.value)
-print(L.next.next.value)
+# print('L', L.value)
+# print(L.next.next.value)
 
 
 
